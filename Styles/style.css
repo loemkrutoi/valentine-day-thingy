@@ -1,10 +1,8 @@
 /*small css animation yeeesssss*/
-
 *{
     margin: 0;
     padding: 0;
     transition-duration: 0.3s;
-
 }
 ::selection{ 
     color: #FF8480;
@@ -16,17 +14,16 @@ body{
 .main,.iloveyou{
     margin: auto;
 }
-
 .plsmargin{
     width: 1500px;
     margin: auto;
 }
-
 h1{
     margin: 20px auto;
     text-align: center;
     font-size: 52px;
     color: #fff1e4;
+    text-shadow: 0px 0px 5px #fff1e483;
     font-family: "Comfortaa", serif;
     z-index: 100;
     @media (max-width: 1023px) {
@@ -53,13 +50,16 @@ p{
     width: 500px; height: 70px;
     margin: auto;
     @media (max-width: 1023px) {
-        margin-bottom: 250px;
+        margin-bottom: 350px;
     }
     @media (max-width: 425px) {
-        margin-bottom: 700px;
+        margin-bottom: 800px;
     }   
 }
 .h1-first{
+    @media (max-width: 1023px) {
+        margin-top: 50px;
+    }
     @media (max-width: 425px) {
         margin-top: 100px;
     }  
@@ -183,8 +183,6 @@ p{
     position: relative;
     left: -21px; top: -30px
 }
-
-
 .iloveyou{
     display: block;
     width: 350px; height: 450px;
@@ -242,7 +240,6 @@ p{
 .back-arm{
     left: 90px; top: 120px;
     z-index: 1;
-    transform: rotate(110deg);
     animation: armSwingBack 2s 0.2s ease-in-out infinite;
 }
 .front-leg{
@@ -256,7 +253,6 @@ p{
     z-index: 3;
     animation: legSwingBack 2s 0.2s ease-in-out infinite;
 }
-
 .head-base{
     position: absolute;
     top: 75px; left: 80px;
@@ -344,7 +340,6 @@ p{
     z-index: 4;
     transform: rotate(-10deg);
 }
-
 .hair-left-bang{
     position: absolute;
     top: 70px; left: 70px;
@@ -444,7 +439,6 @@ p{
     top: 160px; left: 140px;
     border-radius: 10px 10px 25px 25px;
 }
-
 @keyframes eyeSparkleAnim {
     50%{
         transform: scale(1.1);
@@ -632,7 +626,6 @@ p{
         transform: translateX(0px) rotate(350deg) scale(1, 1.1);
     }
 }
-
 a{
     margin: 50px auto;
     text-align: center;
@@ -646,7 +639,6 @@ a{
     border-radius: 10px;
     font-family: "Comfortaa", serif;
     text-decoration: none;
-    transition-duration: 0.3s;
     @media (max-width: 1023px) {
         font-size: 40px;
         width: 300px;
@@ -659,6 +651,14 @@ a{
 a:hover, a:active{
     background-color: #d53d3d;
     border-radius: 20px;
+    text-shadow: 0px 0px 10px #fff1e4;
+    width: 240px;
+    @media (max-width: 1023px) {
+        width: 340px;
+    }
+    @media (max-width: 425px) {
+        width: 640px;
+    }
 }
 a::selection{
     color: #d53d3d;
