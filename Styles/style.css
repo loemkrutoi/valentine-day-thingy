@@ -4,6 +4,7 @@
     padding: 0;
     transition-duration: 0.3s;
 }
+[v-cloak] { display: none;}
 ::selection{ 
     color: #FF8480;
     background-color: #fff1e4;
@@ -11,11 +12,10 @@
 body{
     background-color: #FF8480;
 }
-.main,.iloveyou{
+.main,.iloveyou,.plsmargin{
     margin: auto;
 }
 .plsmargin{
-    width: 1500px;
     margin: auto;
 }
 h1{
@@ -138,11 +138,11 @@ p{
 }
 .two{
     top: -40px;
-    animation: heartSwing 3s 0.5s ease-in-out infinite;
+    animation: heartSwing 3s -0.5s ease-in-out infinite;
 }
 .three{
     top: -40px;
-    animation: heartSwingLight 4s 0.5s ease-in-out infinite;
+    animation: heartSwingLight 4s -1s ease-in-out infinite;
 }
 .five{
     animation: heartSwingLight 3s ease-in-out infinite;
@@ -186,7 +186,7 @@ p{
 .iloveyou{
     display: block;
     width: 350px; height: 450px;
-    animation: floatingAnim 1s ease-in-out infinite;
+    animation: floatingAnim 1s -1s ease-in-out infinite;
     margin: 20px auto;
     @media (max-width: 1023px) {
         animation: floatingAnimSmallScreen 1s ease-in-out infinite;
@@ -201,12 +201,12 @@ p{
     position: absolute;
 }
 .head{
-    animation: headTilt 2s 0.3s ease-in-out infinite;
+    animation: headTilt 2s -0.7s ease-in-out infinite;
 }
 .heart{
     left: 110px; top: 40px;
     z-index: 2;
-    animation: heartBeat 2s ease-in-out infinite;
+    animation: heartBeat 2s -1s ease-in-out infinite;
 }
 .heart-left{
     position: absolute;
@@ -229,29 +229,29 @@ p{
 .body{
     left: 0px; top: 80px;
     transform: rotate(10deg);
-    animation: bodySwing 2s ease-in-out infinite;
+    animation: bodySwing 2s -1s ease-in-out infinite;
 }
 .front-arm{
     left: 90px; top: 20px;
     z-index: 3;
     transform: rotate(45deg);
-    animation: armSwingFront 2s 0.5s ease-in-out infinite;
+    animation: armSwingFront 2s -0.5s ease-in-out infinite;
 }
 .back-arm{
     left: 90px; top: 120px;
     z-index: 1;
-    animation: armSwingBack 2s 0.2s ease-in-out infinite;
+    animation: armSwingBack 2s -0.8s ease-in-out infinite;
 }
 .front-leg{
     left: 60px; top: 210px;
     z-index: 1;
     transform: rotate(150deg);
-    animation: legSwingFront 2s -1s ease-in-out infinite;
+    animation: legSwingFront 2s -2s ease-in-out infinite;
 }
 .back-leg{
     left: -10px; top: 220px;
+    animation: legSwingBack 2s -0.8s ease-in-out infinite;
     z-index: 3;
-    animation: legSwingBack 2s 0.2s ease-in-out infinite;
 }
 .head-base{
     position: absolute;
@@ -282,7 +282,7 @@ p{
 .face{
     position: absolute;
     top: 0px; left: 9px;
-    animation: faceSquish 2s ease-in-out infinite;
+    animation: faceSquish 2s -1s ease-in-out infinite;
 }
 .eye{
     position: absolute;
@@ -312,7 +312,7 @@ p{
     background-color: #fff1e4;
     border-radius: 100%;
     z-index: 4;
-    animation: eyeSparkleAnim 1s ease-in-out infinite;
+    animation: eyeSparkleAnim 1s -1s ease-in-out infinite;
 }
 .mouth{
     position: absolute;
@@ -347,7 +347,7 @@ p{
     background-color: rgb(38, 33, 28);
     border-radius: 50% 0% 100% 0%;
     z-index: 5;
-    animation: bangsAnim 2s ease-in-out infinite;
+    animation: bangsAnim 2s -1s ease-in-out infinite;
 }
 .hair-right-bang{
     position: absolute;
@@ -357,7 +357,7 @@ p{
     border-radius: 0% 100% 0% 100%;
     z-index: 5;
     transform: rotate(355deg);
-    animation: bangsAnimLeft 2s ease-in-out infinite;
+    animation: bangsAnimLeft 2s -1s ease-in-out infinite;
 
 }
 .hair-back-first{
@@ -377,7 +377,7 @@ p{
     border-radius: 25%;
     z-index: 1;
     transform: rotate(20deg);
-    animation: hairBack 2s ease-in-out infinite;
+    animation: hairBack 2s -1s ease-in-out infinite;
 }
 .ahoge{
     position: absolute;
@@ -387,7 +387,7 @@ p{
     border-radius: 25px;
     z-index: 5;
     transform: rotate(20deg);
-    animation: ahogeAnim 2s ease-in-out infinite;
+    animation: ahogeAnim 2s -1s ease-in-out infinite;
 }
 .ahoge-second{
     position: absolute;
@@ -397,7 +397,7 @@ p{
     border-radius: 25px;
     z-index: 5;
     transform: rotate(330deg);
-    animation: ahogeAnimSecond 2s ease-in-out infinite;
+    animation: ahogeAnimSecond 2s -1s ease-in-out infinite;
 }
 .body-base{
     background-color: black;
@@ -407,7 +407,7 @@ p{
     z-index: 1;
     border-radius: 10px;
     transform: rotate(30deg);
-    animation: bodySwing 2s ease-in-out infinite;
+    animation: bodySwing 2s -1s ease-in-out infinite;
 }
 .hand-first{
     position: absolute;
