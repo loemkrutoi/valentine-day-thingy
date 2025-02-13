@@ -6,8 +6,7 @@
 }
 [v-cloak] { display: none;}
 ::selection{ 
-    color: #FF8480;
-    background-color: #fff1e4;
+    color: #FF8480; background-color: #fff1e4;
 }
 body{
     background-color: #FF8480;
@@ -15,8 +14,14 @@ body{
 .main,.iloveyou,.plsmargin{
     margin: auto;
 }
-.plsmargin{
-    width: 1500px;
+.main{
+    overflow: hidden;
+    width: 1500px; height: 100%;
+    @media (max-width: 423px) {
+        position: relative;
+        top: -910px; left: -560px;
+        transform: scale(0.3);
+    }
 }
 h1{
     margin: 20px auto;
@@ -80,7 +85,6 @@ p{
     }
     @media (max-width: 425px) {
         position: relative;
-        top: 100px;
     } 
 }
 .toHide{
@@ -627,11 +631,10 @@ p{
     }
 }
 a{
-    margin: 50px auto;
+    margin: 50px auto; padding: 20px 40px;
     text-align: center;
     display: block;
     width: 200px;
-    padding: 20px 40px;
     color: #fff1e4;
     border: none;
     font-size: 23px;
@@ -660,7 +663,4 @@ a:hover, a:active{
         width: 640px;
     }
 }
-a::selection{
-    color: #d53d3d;
-    background-color: #fff1e4;
-}
+a::selection{ color: #d53d3d; background-color: #fff1e4; }
