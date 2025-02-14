@@ -19,7 +19,7 @@ body{
     width: 1500px; height: 100%;
     @media (max-width: 423px) {
         position: relative;
-        top: -910px; left: -560px;
+        top: -960px; left: -550px;
         transform: scale(0.3);
     }
 }
@@ -52,7 +52,6 @@ p{
     }   
 }
 .placeholder{
-    width: 500px; height: 70px;
     margin: auto;
     @media (max-width: 1023px) {
         margin-bottom: 350px;
@@ -197,6 +196,7 @@ p{
     }
     @media (max-width: 425px) {
         animation: floatingAnimEvenSmallerScreen 1s ease-in-out infinite;
+        position: relative; top: -100px;
     }   
 }
 .iloveyou>div{
